@@ -48,7 +48,7 @@
 			  <div class="row">
 				  <div class="col-sm-3">
 					  <div class="logo">
-						  <a href="index.html">William Law</a>
+						  <a href="https://williamlaw.xyz">William Law</a>
 					  </div>
 				  </div>
 
