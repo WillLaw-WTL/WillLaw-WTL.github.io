@@ -199,7 +199,7 @@
 		  </div>
 	  </section>
 
-		<!-- Skills -->
+		<!-- Skills 
 		<section id="skills">
 			<div class="container">
 				<div class="row">
@@ -228,6 +228,7 @@
 				</div>
 			</div>
 		</section>
+		-->
 
 	  <!-- PORTFOLIO -->
 	  <section id="portfolio">
