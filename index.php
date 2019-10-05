@@ -128,7 +128,7 @@
 					  <p>
 						I'm a 17-year-old student interested in learning more about the problems 
 						that our society faces, and how to tackle these issues using the technology 
-						and resources that we have available. My goal is to be disrupt the autonomous  
+						and resources that we have available. My goal is to disrupt the autonomous  
 						vehicle industry by creating fully autonomous vehicles that are widely accessible 
 						and applicable to different industries. I also focus a lot on full-stack web development and using this skillset to build 
 						e-commerce platforms to help small businesses expand.
