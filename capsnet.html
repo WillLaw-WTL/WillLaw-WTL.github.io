@@ -156,11 +156,11 @@
 
             <p>
               The first part of the network is responsible for taking an image as input 
-              (i.e. MNIST digits) and converts them into a 16D vector. 
+              (i.e. MNIST digits) and converting it into a 16D vector. 
               <br/>• <strong>Convolutional Layer</strong>: Find basic features in the image
-              <br/>• <strong>The PrimaryCaps layer</strong>: has 32 capsules that is responsible for
+              <br/>• <strong>The PrimaryCaps layer</strong>: has 32 capsules that are responsible for
               taking those basic features and understanding the spatial relationships between them.
-              <br/>• <strong>The DigitCaps layer</strong>: contains 10 capsules, one for each layer. 
+              <br/>• <strong>The DigitCaps layer</strong>: contains 10 capsules, one layer for each digit. 
               This is where the network condenses the vector to 16D to be passed to the decoder.
             </p>
             <p>
@@ -183,9 +183,9 @@
                 <h2>Current Performance</h2>
                 <p>
                     At the moment, capsule networks outperform certain state-of-the-art
-                    techniques on specific datasets. However, capsule networks 
+                    techniques on specific smaller datasets. However, capsule networks 
                     have not been trained on larger datasets (i.e. CIFAR10),
-                    which makes it still trail behind other techniques. 
+                    which doesn't make it extremely versatile. 
                 </p>
                 <p>
                     On the bright side, the <i>routing-by-agreement</i> algorithm
@@ -195,7 +195,7 @@
                 </p>
                 <p>
                     Capsule Networks are very promising. With the current state of 
-                    computing power, it makes it difficult to deploy at a larger 
+                    computing power, it makes it difficult to deploy models at a larger 
                     scale. In the near future, I definitely see a huge potential 
                     for the applications that capsule networks can impact.
                 </p>
