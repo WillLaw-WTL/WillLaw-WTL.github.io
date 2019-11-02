@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Object Detection</title>
+    <title>Capsule Neural Networks</title>
 	  <link rel="icon" href="assets/img/portfolio/navicon.png" >
 
     <!-- CSS PLUGIN -->
@@ -81,7 +81,7 @@
     <div
       id="home"
       class="home-bg box-intro"
-      style="background-image: url('assets/img/portfolio/objectdetection.jpg')"
+      style="background-image: url('assets/img/portfolio/capsnetbg.jpg')"
       data-stellar-background-ratio="0.6"
     >
       <div class="overlay">
@@ -94,11 +94,10 @@
                 data-aos-delay="300"
                 data-aos-offset="0"
               >
-                <h1>Real-Time Object Detection</h1>
+                <h1>Capsule Neural Networks</h1>
                 <h3>
                   <div>
-                    Using OpenCV to place bounding boxes and masks with Mask
-                    R-CNN
+                    To classify traffic signs
                   </div>
                 </h3>
               </div>
@@ -118,71 +117,94 @@
       <div class="container">
         <div class="row">
           <div class="description col-md-6 col-sm-4 col-xs-12">
-            <h2>Real-Time Object Detection</h2>
+            <h2>Capsule Neural Networks</h2>
 
             <p>
-              I used OpenCV to create a real-time object detection program that
-              places bounding boxes and a mask on objects identified.
+              I used Tensorflow to build a capsule 
+              network that classifies traffic signs.
             </p>
             <p>
-              Mask R-CNN is a simple framework designed for object instance
-              segmentation (being able to classify multiple objects in an image)
-              and adds a mask for each object classified.
+                Capsule Neural Networks (CapsNet) tackle the problem that CNNs have
+                with Max Pooling layers (the idea of taking the most active
+                neurons). This results in the CNN to strictly remembering 
+                the positions of certain features, but fails to classify 
+                the same image if we move the features to different locations.
             </p>
             <p>
               View source code
-              <a target="_blank" href="https://github.com/wlawt/2D-Object-Detection">here</a>
-              and the <a target="_blank" href="https://www.youtube.com/watch?v=8Fgudla8AqI&feature=youtu.be">demo</a>.
+              <a target="_blank" href="https://github.com/wlawt/capsnet-trafficsigns">here</a>.
             </p>
           </div>
           <div class="description col-md-6 col-sm-4 col-xs-12">
             
-          <video width="500" height="250" autoplay loop>
-            <source
-              src="assets/img/portfolio/obj.mp4"
-              type="video/mp4"
-            />
+                <img src="assets/img/portfolio/capsnet.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 100%; padding-top: 50px; padding-left: 15px;"/>
           </div>
         </div>
 
         <div class="row" style="margin-top: 40px">
             <div class="description col-md-6 col-sm-4 col-xs-12">
-                <img src="assets/img/maskrnn.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 60%; padding-top: 20px"/>
-                <p style="text-align: center; padding-top: 10px">Mask R-CNN framework for object segmentation</p>
+                <img src="assets/img/portfolio/encoder.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; padding-top: 20px; padding-right: 15px;"/>
+                <p style="text-align: center; padding-top: 10px">Part 1: Encoder (first 3 layers of CapsNet)</p>
                 
-                <img src="assets/img/maskpic.png" style="display: block; margin-left: auto; margin-right: auto; width: 60%; padding-top: 10px"/>
+                <img src="assets/img/portfolio/decoder.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; padding-top: 15px; padding-right: 15px;"/>
                 <p style="text-align: center; padding-top: 10px">
-                    Mask-RCNN Output = Class label, Bounding Box, and Mask
+                    Part 2: Decoder (the other 3 layers of CapsNet)
                   </p>
             </div>
           <div class="description col-md-6 col-sm-4 col-xs-12">
-            <h2>What is Mask R-CNN?</h2>
+            <h2>CapsNet Architecture</h2>
 
             <p>
-              Mask R-CNN branches off of the existing framework, Faster R-CNN and is 
-              simple and flexible to train. In both frameworks, object classification 
-              and bounding box regression are performed.
+              The first part of the network is responsible for taking an image as input 
+              (i.e. MNIST digits) and converts them into a 16D vector. 
+              <br/>• <strong>Convolutional Layer</strong>: Find basic features in the image
+              <br/>• <strong>The PrimaryCaps layer</strong>: has 32 capsules that is responsible for
+              taking those basic features and understanding the spatial relationships between them.
+              <br/>• <strong>The DigitCaps layer</strong>: contains 10 capsules, one for each layer. 
+              This is where the network condenses the vector to 16D to be passed to the decoder.
             </p>
             <p>
-              So what's the difference?
-            </p>
-            <p>
-              Mask R-CNN adds a segmentation mask for every object classified that has a 
-              bounding box. These masks are predicted <strong>independently</strong>
-              from the classification and box calculations.
-            </p>
-            <p>
-              Images are resized to 800 px and the framework was trained on 8 GPUs 
-              with a <strong>learning rate</strong> of 0.02, a <strong>weight decay</strong>
-              of 0.0001, and a <strong>momentum</strong> of 0.9.
+              The second part is the decoder. Its objective is to take the 16D vector from the
+              encoder and reconstruct the image using that data. The closer the reconstructed
+              28x28 image looks to the original input, the better the model.   
             </p>
             <p>
               Read the full research paper
-              <a target="_blank" href="https://paperswithcode.com/paper/mask-r-cnn">here</a>.
+              <a target="_blank" href="https://arxiv.org/abs/1805.04424">here</a>.
+              <br/>
+              Read the Dynamic Routing between Capsules research paper
+              <a target="_blank" href="http://papers.nips.cc/paper/6975-dynamic-routing-between-capsules.pdf">here</a>.
             </p>
-          </div>
+          </div>       
         </div>
 
+        <div class="row" style="margin-top: 40px">
+            <div class="description col-md-6 col-sm-4 col-xs-12">
+                <h2>Current Performance</h2>
+                <p>
+                    At the moment, capsule networks outperform certain state-of-the-art
+                    techniques on specific datasets. However, capsule networks 
+                    have not been trained on larger datasets (i.e. CIFAR10),
+                    which makes it still trail behind other techniques. 
+                </p>
+                <p>
+                    On the bright side, the <i>routing-by-agreement</i> algorithm
+                    allows the model to understand more abstract images contrary to 
+                    what it has learned. The tradeoff, however, lies in the 
+                    time complexity being a lot more expensive. 
+                </p>
+                <p>
+                    Capsule Networks are very promising. With the current state of 
+                    computing power, it makes it difficult to deploy at a larger 
+                    scale. In the near future, I definitely see a huge potential 
+                    for the applications that capsule networks can impact.
+                </p>
+            </div>
+            <div class="description col-md-6 col-sm-4 col-xs-12">
+                    <img src="assets/img/portfolio/reconstruct.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 100%; padding-top: 100px; padding-right: 15px;"/>
+                    <p>Decoder results after reconstructing using the info from the encoder</p>
+                </div>
+        </div>
         
       </div>
       </video>
