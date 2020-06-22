@@ -6,20 +6,23 @@
       font-weight: 400;
   }
 
+  @media only screen and (min-width: 769px) {
+    .column {
+        float: left;
+        width: 40%;
+        padding: 5px;
+    }
 
-  img.design {
-    transition:transform 0.25s ease;
-  }
-
-  img.design:hover {
-    -webkit-transform:scale(4.5);
-    transform:scale(4.5);
-  }
-
-  .column {
-    float: left;
-    width: 40%;
-    padding: 5px;
+    img.design {
+        transition:transform 0.25s ease;
+        width: 200px;
+        height: 150px;
+    }
+    
+    img.design:hover {
+        -webkit-transform:scale(4.5);
+        transform:scale(4.5);
+    }
   }
 
   @media only screen and (max-width: 600px) {
@@ -27,6 +30,12 @@
           float: left;
           width: 100%;
           padding: 5px;
+      }
+
+      img.design {
+        transition:transform 0.25s ease;
+        width: 100%;
+        height: 100%;
       }
   }
   
