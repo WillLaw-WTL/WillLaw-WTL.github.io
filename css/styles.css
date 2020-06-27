@@ -64,13 +64,18 @@
     display: table;
   }
 
+  body {
+      background-color: #252525;
+      color: #F7F7F7;
+  }
+
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-      color: #222;
+      color: #F7F7F7;
       margin: 0 0 20px;
   }
 
@@ -108,23 +113,23 @@
   }
 
   a {
-      color: #39c;
+      color: #59AFFF;
       text-decoration: none;
   }
 
   a:hover {
-      color: #069;
+      color: #2C99FF;
   }
 
   a small {
       font-size: 11px;
-      color: #777;
+      color: #2C99FF;
       margin-top: -0.3em;
       display: block;
   }
 
   a:hover small {
-      color: #777;
+      color: #2C99FF;
   }
 
   .wrapper {
