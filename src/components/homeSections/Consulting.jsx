@@ -11,12 +11,12 @@ export default function Consulting() {
         <li>
           <a href={Swl} target="_blank">
             Reducing household expenditures through sharing economics
-                    </a>
+          </a>
         </li>
         <li>
           <a href={Kidogo} target="_blank">
             Increasing profits for EDC centers in Kenya by tackling malnutrition
-                    </a>
+          </a>
         </li>
       </ul>
       <p>These were done in collaboration with Sidewalk Labs Toronto and Kidogo Co.</p>

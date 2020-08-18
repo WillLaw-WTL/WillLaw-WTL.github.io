@@ -1,6 +1,8 @@
 import React from 'react'
+import { articlesa } from "../state/data"
 
 export default function Article() {
+  console.log(articlesa)
   const articles = [
     {
       title: "Capsule Neural Networks — The future for autonomous vehicles",
