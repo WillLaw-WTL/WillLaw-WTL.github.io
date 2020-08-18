@@ -40,7 +40,7 @@ export default function Header2() {
       <header>
         <h1>William Law</h1>
         <img src={Headshot} style={{ borderRadius: "10px" }} alt="Avatar" />
-        <p>Typing for a living 🙃😎</p>
+        <p>Typing for a living <span role="img" aria-labelledby="">🙃😎</span></p>
         <p>Computer Science @ uWaterloo '25</p>
         <p style={{ paddingBottom: 0, marginBottom: 0 }}>
           <b>Let's chat if you:</b> have an interesting startup opportunity in software/product
@@ -68,7 +68,7 @@ export default function Header2() {
         {socials.map(social => (
           <div className="view" key={`${social.name}`}><a href={`${social.link}`}>{social.name}</a></div>
         ))}
-        <div className="view" style={{ marginBottom: "10px" }}><a href={Resume} target="_blank">Resume</a></div>
+        <div className="view" style={{ marginBottom: "10px" }}><a href={Resume} target="_blank" rel="noopener noreferrer">Resume</a></div>
 
       </header>
       <section>

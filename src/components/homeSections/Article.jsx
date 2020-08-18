@@ -26,7 +26,10 @@ export default function Article() {
       <ul>
         {articles.map(article => (
           <li key={`${article.link}`}>
-            <a href={`${article.link}`} target="_blank">
+            <a
+              href={`${article.link}`}
+              target="_blank" rel="noopener noreferrer"
+            >
               {article.title}
             </a>
           </li>
@@ -34,7 +37,7 @@ export default function Article() {
       </ul>
       <p>
         These are the one's I think are the most interesting, you can check the rest out on my
-        <a href="https://medium.com/@w.law" target="_blank">{" "}Medium</a> profile.
+        <a href="https://medium.com/@w.law" target="_blank" rel="noopener noreferrer">{" "}Medium</a> profile.
       </p>
     </>
   )

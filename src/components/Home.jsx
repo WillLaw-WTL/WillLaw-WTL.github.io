@@ -21,8 +21,13 @@ export default function Home() {
       <p>
         Signup for my newsletter where I update my audience with the things that I'm working on
         every couple of months. Check out my past ones
-        <a href="https://us20.campaign-archive.com/home/?u=19b5484360b07ef43fd97b267&id=be88e6b4d8"
-          target="_blank">here.</a>
+        <a
+          href="https://us20.campaign-archive.com/home/?u=19b5484360b07ef43fd97b267&id=be88e6b4d8"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}here.
+        </a>
       </p>
 
       <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css" />
