@@ -1,8 +1,6 @@
 import React from 'react'
-import { articlesa } from "../state/data"
 
 export default function Article() {
-  console.log(articlesa)
   const articles = [
     {
       title: "Capsule Neural Networks — The future for autonomous vehicles",
@@ -20,14 +18,14 @@ export default function Article() {
       title: "Class AI - Improving the efficency of data labeling processes",
       link: "https://www.youtube.com/watch?v=6twEiJQ1HAc&feature=emb_title"
     }
-  ]
+  ];
 
   return (
     <>
       <h1>Articles and Talks</h1>
       <ul>
         {articles.map(article => (
-          <li>
+          <li key={`${article.link}`}>
             <a href={`${article.link}`} target="_blank">
               {article.title}
             </a>

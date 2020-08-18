@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function Software() {
-  const whatImWorking = [
+  const projects = [
     {
       hyperText: "AI Drug Discovery Platform",
       link: "https://github.com/wlawt/synbiolic",
@@ -38,8 +38,8 @@ export default function Software() {
     <>
       <h1>Software Projects</h1>
       <ul>
-        {whatImWorking.map(project => (
-          <li>
+        {projects.map(project => (
+          <li key={`${project.link}`}>
             <a href={`${project.link}`} target="_blank">
               {project.hyperText}
             </a>

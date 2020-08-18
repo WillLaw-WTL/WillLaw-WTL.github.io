@@ -9,20 +9,20 @@ export default function Design() {
   return (
     <>
       <h1>Design Library</h1>
-      <div class="row">
-        <div class="column">
-          <img class="design" src={Bbt} alt="BBT iOS Design" />
+      <div className="row">
+        <div className="column">
+          <img className="design" src={Bbt} alt="BBT iOS Design" />
         </div>
-        <div class="column">
-          <img class="design" src={SaaS} alt="SaaS Design" />
+        <div className="column">
+          <img className="design" src={SaaS} alt="SaaS Design" />
         </div>
       </div>
-      <div class="row" style={{ marginTop: "10px" }}>
-        <div class="column">
-          <img class="design" src={SaaSHTML} alt="SaaS-to-HTML Design" />
+      <div className="row" style={{ marginTop: "10px" }}>
+        <div className="column">
+          <img className="design" src={SaaSHTML} alt="SaaS-to-HTML Design" />
         </div>
-        <div class="column">
-          <img class="design" src={iOS} alt="iOS Design" />
+        <div className="column">
+          <img className="design" src={iOS} alt="iOS Design" />
         </div>
       </div>
     </>

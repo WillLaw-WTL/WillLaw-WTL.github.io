@@ -35,7 +35,6 @@ export default function Header2() {
       link: "https://dribbble.com/wlawt"
     }
   ]
-
   return (
     <div className="wrapper">
       <header>
@@ -48,7 +47,8 @@ export default function Header2() {
               that can help lots of people <b>OR</b> a cool project that you're working on that you think can go somewhere
           </p>
         <div style={{ marginBottom: "10px", paddingBottom: "10px" }}>
-          <input onclick="changetheme()" type="checkbox" id="switch"></input><label for="switch">Toggle</label>
+          {/* TODO: Add function to toggle theme */}
+          {/* <input type="checkbox" id="switch"></input><label htmlFor="switch">Toggle</label> */}
         </div>
         <div>
           <iframe
@@ -59,16 +59,16 @@ export default function Header2() {
         </div>
 
         {!showBlog ? (
-          <div class="view"><a href="#" onClick={() => setShowBlog(true)}>Blog</a></div>
+          <div className="view"><a href="#" onClick={() => setShowBlog(true)}>Blog</a></div>
         ) : (
-            <div class="view"><a href="#" onClick={() => setShowBlog(false)}>Home</a></div>
+            <div className="view"><a href="#" onClick={() => setShowBlog(false)}>Home</a></div>
           )}
         <br />
 
         {socials.map(social => (
-          <div class="view"><a href={`${social.link}`}>{social.name}</a></div>
+          <div className="view" key={`${social.name}`}><a href={`${social.link}`}>{social.name}</a></div>
         ))}
-        <div class="view" style={{ marginBottom: "10px" }}><a href={Resume} target="_blank">Resume</a></div>
+        <div className="view" style={{ marginBottom: "10px" }}><a href={Resume} target="_blank">Resume</a></div>
 
       </header>
       <section>
