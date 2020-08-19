@@ -1,0 +1,44 @@
+/* 
+  TOGGLE BUTTON CSS
+*/
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 50px;
+  height: 25px;
+  background: #A1A1A1;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked+label {
+  background: #359EEE;
+}
+
+input:checked+label:after {
+  left: calc(100% - 0.5px);
+  transform: translateX(-120%);
+}
+
+label:active:after {
+  width: 20px;
+}

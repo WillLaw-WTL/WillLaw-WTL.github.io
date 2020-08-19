@@ -1,7 +1,10 @@
 import React from 'react';
 
 import './css/App.css';
-import './css/styles.css'
+import './css/styling.css'
+import './css/tags.css'
+import './css/components.css'
+import './css/responsive.css'
 
 import Header from "./components/Header"
 
