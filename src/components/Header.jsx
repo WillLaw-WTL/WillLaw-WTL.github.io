@@ -6,7 +6,7 @@ import Blog from "./Blog"
 
 import Resume from "../assets/William Law Resume.pdf"
 
-import socials from "./data.json"
+import socials from "./data/data.json"
 
 export default function Header2() {
   const [showBlog, setShowBlog] = useState(false);
