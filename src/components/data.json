@@ -1,0 +1,82 @@
+{
+  "socials": [
+    {
+      "name": "Email",
+      "link": "mailto:williamlaw.wtl@gmail.com"
+    },
+    {
+      "name": "LinkedIn",
+      "link": "https://www.linkedin.com/in/william-t-law/"
+    },
+    {
+      "name": "Twitter",
+      "link": "https://twitter.com/wlaw_"
+    },
+    {
+      "name": "Medium",
+      "link": "https://medium.com/@w.law"
+    },
+    {
+      "name": "Github",
+      "link": "https://github.com/wlawt"
+    },
+    {
+      "name": "Devpost",
+      "link": "https://devpost.com/willLaw"
+    },
+    {
+      "name": "Dribbble",
+      "link": "https://dribbble.com/wlawt"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Capsule Neural Networks — The future for autonomous vehicles",
+      "link": "https://towardsdatascience.com/capsule-neural-networks-the-future-for-autonomous-vehicles-f97bc3f7918"
+    },
+    {
+      "title": "LaserNet | A step into a fully autonomous society",
+      "link": "https://medium.com/analytics-vidhya/lasernet-a-closer-step-into-a-fully-autonomous-society-6ded766db7fe"
+    },
+    {
+      "title": "Vehicular Fog Computing — Communicating without lag",
+      "link": "https://medium.com/analytics-vidhya/vehicular-fog-computing-communication-without-lag-3c2452f4885b"
+    },
+    {
+      "title": "Class AI - Improving the efficency of data labeling processes",
+      "link": "https://www.youtube.com/watch?v=6twEiJQ1HAc&feature=emb_title"
+    }
+  ],
+  "projects": [
+    {
+      "hyperText": "AI Drug Discovery Platform",
+      "link": "https://github.com/wlawt/synbiolic",
+      "stack": "Azure, TensorFlow, MERN"
+    },
+    {
+      "hyperText": "COVID-19 Forcasting Model",
+      "link": "https://github.com/wlawt/covid19-project",
+      "stack": "Python, Scikit"
+    },
+    {
+      "hyperText": "Decentralized medical records/health card",
+      "link": "https://openmed.tech/",
+      "stack": "BigChainDB, MERN"
+    },
+    {
+      "hyperText": "Biodegradeable phone case startup (J.A. program)",
+      "link": "https://github.com/wlawt/rootcase",
+      "stack": "eJS, Node, Stripe"
+    },
+    {
+      "hyperText": "The Medium for Secondary Students",
+      "link": "https://github.com/wlawt/ideaspace",
+      "stack": "SpringBoot, Java, React"
+    },
+    {
+      "hyperText": "Manage/track volunteer hours 10x faster",
+      "link": "https://github.com/wlawt/htc",
+      "stack": "MERN"
+    }
+  ]
+}

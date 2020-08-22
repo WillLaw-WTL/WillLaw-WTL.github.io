@@ -6,39 +6,10 @@ import Blog from "./Blog"
 
 import Resume from "../assets/William Law Resume.pdf"
 
+import socials from "./data.json"
+
 export default function Header2() {
   const [showBlog, setShowBlog] = useState(false);
-
-  const socials = [
-    {
-      name: "Email",
-      link: "mailto:williamlaw.wtl@gmail.com"
-    },
-    {
-      name: "LinkedIn",
-      link: "https://www.linkedin.com/in/william-t-law/"
-    },
-    {
-      name: "Twitter",
-      link: "https://twitter.com/wlaw_"
-    },
-    {
-      name: "Medium",
-      link: "https://medium.com/@w.law"
-    },
-    {
-      name: "Github",
-      link: "https://github.com/wlawt"
-    },
-    {
-      name: "Devpost",
-      link: "https://devpost.com/willLaw"
-    },
-    {
-      name: "Dribbble",
-      link: "https://dribbble.com/wlawt"
-    }
-  ]
 
   return (
     <div className="wrapper">
@@ -72,7 +43,7 @@ export default function Header2() {
 
         <br />
 
-        {socials.map(social => (
+        {socials["socials"].map(social => (
           <div className="view" key={`${social.name}`}><a href={`${social.link}`}>{social.name}</a></div>
         ))}
         <div className="view" style={{ marginBottom: "10px" }}><a href={Resume} target="_blank" rel="noopener noreferrer">Resume</a></div>
