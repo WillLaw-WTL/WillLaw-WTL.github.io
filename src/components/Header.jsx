@@ -4,7 +4,7 @@ import Headshot from "../img/hs.jpg"
 import Home from "./Home"
 import Blog from "./Blog"
 
-import Resume from "../assets/SWE Resume.pdf"
+import Resume from "../assets/William Law Resume.pdf"
 
 export default function Header2() {
   const [showBlog, setShowBlog] = useState(false);
@@ -13,6 +13,10 @@ export default function Header2() {
     {
       name: "Email",
       link: "mailto:williamlaw.wtl@gmail.com"
+    },
+    {
+      name: "LinkedIn",
+      link: "https://www.linkedin.com/in/william-t-law/"
     },
     {
       name: "Twitter",
@@ -35,6 +39,7 @@ export default function Header2() {
       link: "https://dribbble.com/wlawt"
     }
   ]
+
   return (
     <div className="wrapper">
       <header>
