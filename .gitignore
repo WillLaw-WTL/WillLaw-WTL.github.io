@@ -12,6 +12,7 @@
 /build
 
 /website
+/src/oldWebsite
 
 # misc
 .DS_Store
