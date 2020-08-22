@@ -4,6 +4,11 @@ export default function Blog() {
   return (
     <Fragment>
       <h1>Blog</h1>
+
+      {/*
+        When dealing with React Router
+        https://dev.to/easybuoy/deploying-react-app-from-github-to-netlify-3a9j 
+      */}
       <div class="blog-card">
         <div class="card-container">
           <h2>What it's like to PM</h2>
