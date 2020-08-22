@@ -1,5 +1,5 @@
 import React from 'react'
-import articles from "../data.json"
+import articles from "../data/data.json"
 
 export default function Article() {
   return (

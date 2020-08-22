@@ -1,5 +1,5 @@
 import React from 'react'
-import projects from "../data.json"
+import projects from "../data/data.json"
 
 export default function Software() {
   return (
