@@ -2,10 +2,10 @@ version: 2.1
 orbs:
   node: circleci/node@3.0.0
 
-workflows:
-  node-tests:
-    jobs:
-      - node/test
+jobs:
+  build:
+    executor: node/default
+    steps:
       - restore_cache:
           name: Restore Yarn Package Cache
           keys:
@@ -18,3 +18,9 @@ workflows:
           key: yarn-packages-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache/yarn
+
+workflows:
+  node-tests:
+    jobs:
+      - node/test
+      - build
