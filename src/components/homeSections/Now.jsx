@@ -4,10 +4,10 @@ export default function Now() {
 
   return (
     <>
-      <p>
+      {/* <p>
         Currently looking for Summer 2021 internships in infrastructure / backend / ML infrastructure
         at any large company or medium-large startup!
-      </p>
+      </p> */}
       <h1>Now/Recent</h1>
       <ul>
         <li>
