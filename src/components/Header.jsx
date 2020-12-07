@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Headshot from "../img/hs.jpg"
+import Headshot from "../img/hs2.png"
 
 import Home from "./Home"
 import Blog from "./Blog"
