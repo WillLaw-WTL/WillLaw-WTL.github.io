@@ -4,7 +4,7 @@ import Headshot from "../img/hs.jpg"
 import Home from "./Home"
 import Blog from "./Blog"
 
-import Resume from "../assets/William Law Resume.pdf"
+//import Resume from "../assets/William Law Resume.pdf"
 
 import socials from "./data/data.json"
 
@@ -46,7 +46,7 @@ export default function Header2() {
         {socials["socials"].map(social => (
           <div className="view" key={`${social.name}`}><a href={`${social.link}`}>{social.name}</a></div>
         ))}
-        <div className="view" style={{ marginBottom: "10px" }}><a href={Resume} target="_blank" rel="noopener noreferrer">Resume</a></div>
+        {/* <div className="view" style={{ marginBottom: "10px" }}><a href={Resume} target="_blank" rel="noopener noreferrer">Resume</a></div> */}
       </header>
 
       <section>
