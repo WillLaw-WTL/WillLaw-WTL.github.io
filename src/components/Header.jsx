@@ -20,10 +20,10 @@ export default function Header2() {
         <p>Typing for a living <span role="img" aria-labelledby="">🙃😎</span></p>
         <p>Computer Science @ uWaterloo '25</p>
 
-        <p style={{ paddingBottom: 0, marginBottom: 0 }}>
+        {/* <p style={{ paddingBottom: 0, marginBottom: 0 }}>
           <b>Let's chat if you:</b> have an interesting startup opportunity in software/product
           that can help lots of people <b>OR</b> a cool project that you're working on that you think can go somewhere
-        </p>
+        </p> */}
 
         <div style={{ marginBottom: "10px", paddingBottom: "10px" }}></div>
 
