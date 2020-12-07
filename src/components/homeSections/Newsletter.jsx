@@ -6,7 +6,7 @@ export default function Newsletter() {
   return (
     <>
       <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css" />
-      <div id="mc_embed_signup" style={{ backgroundColor: "#252525" }}>
+      <div id="mc_embed_signup" style={{ backgroundColor: "#2F3437" }}>
         <form
           action="https://gmail.us20.list-manage.com/subscribe/post?u=19b5484360b07ef43fd97b267&amp;id=be88e6b4d8"
           method="post"
