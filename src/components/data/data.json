@@ -49,7 +49,7 @@
   ],
   "projects": [
     {
-      "hyperText": "AI Drug Discovery Platform",
+      "hyperText": "Deep learning to speed up drug discovery (Microsoft Imagine Cup Finalist)",
       "link": "https://github.com/wlawt/synbiolic",
       "stack": "Azure, TensorFlow, MERN"
     },

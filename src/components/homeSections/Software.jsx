@@ -11,7 +11,6 @@ export default function Software() {
             <a href={`${project.link}`} target="_blank" rel="noopener noreferrer">
               {project.hyperText}
             </a>
-            {" "}({project.stack})
           </li>
         ))}
       </ul>
