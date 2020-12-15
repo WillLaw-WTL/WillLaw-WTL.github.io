@@ -17,8 +17,8 @@ export default function Header2() {
         <h1>William Law</h1>
         <img src={Headshot} style={{ borderRadius: "10px" }} alt="Avatar" />
 
-        <p>Typing for a living <span role="img" aria-labelledby="">🙃😎</span></p>
-        <p>Computer Science @ uWaterloo '25</p>
+        {/* <p>Typing for a living <span role="img" aria-labelledby="">🙃😎</span></p> */}
+        <p>Computer Science at University of Waterloo</p>
 
         {/* <p style={{ paddingBottom: 0, marginBottom: 0 }}>
           <b>Let's chat if you:</b> have an interesting startup opportunity in software/product
